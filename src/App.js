@@ -38,15 +38,10 @@ function App() {
 
     return (
         <div className='App'>
-            {
 
-            <Card data={data} />
-            }
+            <Card data={data} key={data.name} />
 
         </div>
-
-
-
     )
 }
 
