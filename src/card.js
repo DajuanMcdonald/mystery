@@ -1,19 +1,20 @@
-import React from React; 
+import React from 'react';
 
-const Card = () =>  {
+
+const Card = (props) =>  {
     return(
-        <div class="card">
-            <h1>name</h1>
-            <p>eye color</p>
+        <div className="card">
+            <h1>name: {props.data.name}</h1>
+            <p>eye color: {props.data.eye_color}</p>
             <ul>
                 {
-                    movies.map(movie => {
-                        <li>movie</li>
-                    })
+                    // movies.map(movie => {
+                    //     <li>movie: {props.films.length}</li>
+                    // })
                 }
             </ul>
         </div>
     )
-}
+};
 
-export Card;
+export default Card;
