@@ -34,8 +34,6 @@ function App() {
             }).catch(err => {console.error(err)})
     }, []);
 
-
-
     return (
         <div className='App'>
 
